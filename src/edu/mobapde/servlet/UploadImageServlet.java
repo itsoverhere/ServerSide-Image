@@ -73,7 +73,9 @@ public class UploadImageServlet extends HttpServlet {
 	    // This is where the file was saved
 		System.out.println("Success! File saved in : " + file.getAbsolutePath());
 		
-		response.getWriter().write("success");
+//		response.getWriter().write("success");
+		request.setAttribute("filename", fileName);
+		request.getRequestDispatcher("viewphotos.jsp").forward(request, response);
 	}
 
 	

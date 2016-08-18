@@ -32,14 +32,12 @@ public class RetrievePostsServlet extends HttpServlet {
      */
     public RetrievePostsServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		doPost(request, response);
 	}
 
@@ -47,8 +45,6 @@ public class RetrievePostsServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		
 		ArrayList<Post> postArrayList = new ArrayList<>();
 		postArrayList.add(new Post("This is a post.", "photo1.jpg"));
 		postArrayList.add(new Post("This is another post.", "photo2.jpg"));
